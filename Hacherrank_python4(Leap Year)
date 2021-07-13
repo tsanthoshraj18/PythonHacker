@@ -1,0 +1,8 @@
+def hack_5():
+    get_year=int(input("Enter the Year:"))
+    if (get_year % 400 ==0) or (get_year % 4 ==0 and get_year % 100 != 0 ):
+        print("Yes Leap year")
+    else:
+        print("Not a leap year")
+hack_5()
+
