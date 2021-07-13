@@ -1,0 +1,6 @@
+def hack():
+    get_num=int(input("Enter the number:"))
+    for i in range(0,get_num):
+        print(i**2)
+hack()
+
