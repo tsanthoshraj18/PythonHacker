@@ -1,0 +1,13 @@
+def simple_Array_sum():
+    n = int(input())
+    if n >=0 and n <=1000:
+        sum = 0
+        arr = list(map(int, input().split()))[:n]
+        for i in range(0,len(arr)):
+            sum = sum+arr[i]
+        print(sum)
+
+    else:
+        print()
+
+simple_Array_sum()
