@@ -1,0 +1,21 @@
+def runner_up_scour():
+    n = int(input())
+    if n >=2 and n <=10:
+        #print("yes")
+        arr = list(map(int, input().split()))[:n]
+        #print(arr)
+        setof = list(set(arr))
+        setof.sort()
+        set1 = setof
+
+       # print(set1)
+
+       # print(len(set1))
+        l = len(set1)
+        runner=set1[l-2]
+        print(runner)
+
+    else:
+        print()
+
+runner_up_scour()
