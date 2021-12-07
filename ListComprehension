@@ -4,10 +4,15 @@ z = int(input())
 n = int(input())
 list_of_x = []
 for a in range(x + 1):
+    # print("x",a)
     for b in range(y + 1):
+        # print("y",b)
         for c in range(z + 1):
+            # print("z",c)
+            print([a, b, c])
             if a + b + c == n:
+
                 continue
             else:
                 list_of_x.append([a, b, c])
-print(list_of_x)
+ print(list_of_x)
