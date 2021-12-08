@@ -17,15 +17,20 @@ def Nested_list():
     # main_list.sort(key=lambda x: x[1])
     main_list.sort(key=lambda x:(x[1],x[0]))
     names = [i[0] for i in main_list]
+    print(names)
     mark = [i[1] for i in main_list]
+    print(mark)
     min_grade = min(mark)
+    print(min_grade)
     while mark[0]==min_grade:
-        # print(mark[0])
+        print(mark[0])
         mark.remove(mark[0])
         names.remove(names[0])
     for x in range(0,len(mark)):
         if mark[x] == min(mark):
             print(names[x])
+    print(range(0,len(mark)))
+    print(names)
     # print(min_grade)
     # print(names)
     # print(main_list)
