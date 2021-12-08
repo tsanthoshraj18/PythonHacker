@@ -1,0 +1,33 @@
+def Nested_list():
+    Number_of_student = int(input())
+    # print(Number_of_student)
+    Lift_of_name = []
+    List_of_graade = []
+    main_list = []
+    for a in range(Number_of_student):
+        Name_of_student = input()
+        Lift_of_name.append(Name_of_student)
+        Grade_of_student = float(input())
+        List_of_graade.append(Grade_of_student)
+        main_list.append([Name_of_student, Grade_of_student])
+        # main_list.append(Grade_of_student)
+
+    # print(Lift_of_name)
+    # print(List_of_grade)
+    # main_list.sort(key=lambda x: x[1])
+    main_list.sort(key=lambda x:(x[1],x[0]))
+    names = [i[0] for i in main_list]
+    mark = [i[1] for i in main_list]
+    min_grade = min(mark)
+    while mark[0]==min_grade:
+        # print(mark[0])
+        mark.remove(mark[0])
+        names.remove(names[0])
+    for x in range(0,len(mark)):
+        if mark[x] == min(mark):
+            print(names[x])
+    # print(min_grade)
+    # print(names)
+    # print(main_list)
+    # print(main_list)
+Nested_list()
