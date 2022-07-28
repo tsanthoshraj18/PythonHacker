@@ -1,0 +1,5 @@
+select DIStinct city
+    from
+        station
+    where
+         city RLIKE '^[aeiouAEIOU]'
